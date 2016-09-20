@@ -1,2 +1,2 @@
 # vue-lib
-A UI Component Sets
+A UI Component Sets Based on [Vue.js](https://github.com/vuejs/vue)
