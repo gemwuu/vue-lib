@@ -1,0 +1,32 @@
+.vue-dropdown {
+  color: red;
+  cursor: pointer;
+  width: 100px;
+}
+
+.vue-dropdown p:hover {
+  background-color: #eee;
+}
+
+.vue-dropdown p {
+  width: 80px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  color: gray;
+}
+
+.vue-dropdown ul {
+  list-style: none;
+  padding: 0;
+  width: 80px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.vue-dropdown li {
+  color: gray;
+}

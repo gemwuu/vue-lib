@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel='stylesheet' href='./index.css'>
+</head>
+<script type="text/x-template" id="vue-dropdown-template">
+  <p>{{ options[selectedIndex] }}</p>
+  <ul v-show="bShow">
+    <li
+      v-for="(index, option) in options"
+      @click='chooseOption(index)'
+      @mouseover="highlight($event)"
+      @mouseout="unhighlight($event)">
+      {{ option }}
+    </li>
+  </ul>
+</script>
+<body>
+  <div id="vue-dropdown" class='vue-dropdown' @mouseout="hideList" @mouseover="showList">
+    <vue-dropdown
+      :options='options'
+      :selected-index='selectedIndex'
+      >
+    </vue-dropdown>
+  </div>
+</body>
+<script src='./vue.js'></script>
+<script src='./vue-dropdown.js'></script>
+</html>
